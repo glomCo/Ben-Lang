@@ -41,14 +41,16 @@ def ben(func):
             print var
             print line
             print co
+        if func[0] == "until":
+            while int(func[1]) != int(var[func[2]]):
+                ben(line[func[3]])
     except:
-            print "Error line" + str(co)
+            print "Error line " + str(co)
 
 
 
 while 1==1:
     co = co + 1
-    func = raw_input(str(co) + " ")
+    func = raw_input(str(co) + " >")
     line[str(co)] = func 
     ben(func)
-
