@@ -1,0 +1,5 @@
+1 >var q 'Hello_World!'
+Hello_World!
+2 >bensays q
+Hello_World!
+3 >
